@@ -12,13 +12,19 @@ endif
 " plugins configuration
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'preservim/nerdcommenter'
+" Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
 " vim configs
 set noshowmode
 set number
+
+" netrw options
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 25
+let g:netrw_liststyle = 3
